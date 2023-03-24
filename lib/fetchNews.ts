@@ -57,7 +57,7 @@ const fetchNews = async (
         query,
         variables: {
           access_key: process.env.MEDIASTACK_API_KEY,
-          categories: category,
+          categories: "general",
 
           keywords: keywords,
         },
