@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navLink {
+    @apply hover:underline decoration-orange-400 text-center decoration-2 active:underline underline-offset-8
+        rounded-full p-4 cursor-pointer hover:font-bold capitalize hover:scale-110 transition-transform duration-200 
+        ease-out;
+  }
+  .article {
+    @apply bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-slate-200 transition-all duration-200 ease-out;
+  }
+  .headerTitle {
+    @apply text-4xl font-serif capitalize px-10 pt-5 underline decoration-orange-400 decoration-2 underline-offset-4 decoration-double;
+  }
+}

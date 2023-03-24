@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: curl_import_config
+      authentication_906b071cdb: destrehan::stepzen.io+1000::4ac5322bc8d7cfbf17c4fc97a5b19d066507049b8401c09144d2852260ceca69
