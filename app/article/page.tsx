@@ -7,7 +7,7 @@ type Props = {
 
 function page({ searchParams }: Props) {
   if (
-    (searchParams && Object.entries(searchParams).length === 0) ||
+    (searchParams && Object?.entries(searchParams)?.length === 0) ||
     !searchParams
   ) {
     return notFound();
