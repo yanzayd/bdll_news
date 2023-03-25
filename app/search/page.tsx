@@ -7,7 +7,7 @@ type Props = {
 
 async function SearchPage({ searchParams }: Props) {
   const news: NewsResponse = await fetchNews(
-    "general",
+    "general | entertainment | sports | sciences | health | business  | technology",
     searchParams?.term,
     true
   );
