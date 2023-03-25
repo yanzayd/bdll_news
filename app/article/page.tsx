@@ -1,5 +1,3 @@
-import React from "react";
-
 import { notFound } from "next/navigation";
 import LiveTimestamp from "../LiveTimestamp";
 
@@ -7,7 +5,7 @@ type Props = {
   searchParams?: Article;
 };
 
-function ArticlePage({ searchParams }: Props) {
+function page({ searchParams }: Props) {
   if (
     (searchParams && Object.entries(searchParams).length === 0) ||
     !searchParams
@@ -20,7 +18,7 @@ function ArticlePage({ searchParams }: Props) {
   return (
     <article>
       <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10">
-        {article?.image && (
+        {article.image && (
           <img
             className="h-50 max-w-md mx-auto md:max-w-lg lg:max-w-xl object-cover rounded-lg shadow-md"
             src={article?.image}
@@ -48,4 +46,4 @@ function ArticlePage({ searchParams }: Props) {
   );
 }
 
-export default ArticlePage;
+export default page;
